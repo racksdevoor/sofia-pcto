@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html class="dark" lang="it">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>PCTO · Project Work — Caiti Sofia</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">tailwind.config = {darkMode: "class", theme: {extend: {colors: {background: "#f8fafc", primary: "#9333ea", secondary: "#9333ea", tertiary: "#9333ea", surface: "#f8fafc", "surface-container": "#f1f5f9", "surface-container-low": "#f8fafc", "surface-container-high": "#e2e8f0", "on-surface": "#1e293b", "on-surface-variant": "#64748b", "primary-container": "#7e22ce", "text-primary": "#0f172a"}, borderRadius: {DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px"}, spacing: {gutter: "1.5rem", "container-max": "1200px", "section-gap": "4rem"}, fontFamily: {"body-md": ["Inter"], "label-md": ["Inter"], "headline-md": ["Inter"], "headline-lg": ["Inter"], "headline-xl": ["Inter"]}, fontSize: {"label-md": ["14px", {lineHeight: "1.0", letterSpacing: "0.05em", fontWeight: "500"}], "headline-md": ["20px", {lineHeight: "1.4", fontWeight: "600"}], "headline-lg": ["32px", {lineHeight: "1.2", fontWeight: "600"}], "headline-xl": ["48px", {lineHeight: "1.2", letterSpacing: "-0.02em", fontWeight: "700"}], "body-md": ["16px", {lineHeight: "1.6", fontWeight: "400"}]}}}};</script>
+<style>
+    .glass-card { background: rgba(255, 255, 255, 0.75); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border: 1px solid rgba(0, 0, 0, 0.1); }
+    .glass-card:hover { border-color: #9333ea; box-shadow: 0 0 25px rgba(147, 51, 234, 0.1); }
+    .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    h1.text-primary, h2.text-primary, h3.text-primary, h4.text-primary,
+    h2 .text-primary, h3 .text-primary, .text-primary.font-headline-xl,
+    .text-primary.font-headline-lg, .text-primary.font-headline-md {
+      text-shadow: 0 0 20px rgba(147, 51, 234, 0.55);
+    }
+    h1.text-secondary, h2.text-secondary, h3.text-secondary, h4.text-secondary,
+    h2 .text-secondary, h3 .text-secondary, .text-secondary.font-headline-xl,
+    .text-secondary.font-headline-lg, .text-secondary.font-headline-md {
+      text-shadow: 0 0 20px rgba(147, 51, 234, 0.55);
+    }
+    .todo { outline: 1px dashed rgba(147, 51, 234, 0.4); outline-offset: 4px; border-radius: 8px; }
+    body { background-color: #f8fafc; min-height: 100dvh; }
+</style>
+</head>
+<body class="bg-background text-on-surface font-body-md min-h-screen pb-24 md:pb-0 pt-20">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-black/10 flex justify-between items-center px-gutter py-4">
+<a class="flex items-center gap-3" href="index.html">
+<span class="material-symbols-outlined text-primary" style="font-size: 24px;">school</span>
+<h1 class="font-headline-md text-headline-md font-bold text-text-primary">Caiti Sofia</h1>
+</a>
+<div class="flex items-center gap-3">
+<a href="index.html" class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-primary/10 border border-primary/20 text-primary font-label-md text-label-md hover:bg-primary/20 transition-all">
+<span class="material-symbols-outlined" style="font-size:18px;">arrow_back</span>
+Home
+</a>
+<div class="h-10 w-10 rounded-full bg-primary/10 border border-primary/20 flex items-center justify-center font-bold text-primary text-sm">SC</div>
+</div>
+</header>
+<main class="max-w-[1200px] mx-auto px-gutter py-8">
+<!-- Hero -->
+<section class="mb-12">
+<div class="flex flex-col gap-2 mb-8">
+<div class="flex items-center gap-2 text-primary">
+<span class="material-symbols-outlined">terminal</span>
+<span class="font-label-md text-label-md tracking-widest uppercase">Esperienza PCTO · 04</span>
+</div>
+<h2 class="font-headline-xl text-headline-xl md:text-5xl text-text-primary">Project Work</h2>
+<div class="glass-card w-fit px-3 py-1 rounded-lg flex items-center gap-2 mt-2">
+<span class="material-symbols-outlined text-primary text-sm">calendar_today</span>
+<span class="text-xs">24/06/2024 - 29/06/2024</span>
+</div>
+</div>
+<!-- Banner placeholder -->
+<div class="w-full aspect-[21/9] rounded-2xl overflow-hidden glass-card relative">
+<img alt="Indagine statistica — sport e dispositivi elettronici" class="w-full h-full object-contain bg-black" src="img/project_work.png"/>
+</div>
+</section>
+<!-- L'Esperienza -->
+<div class="glass-card rounded-2xl p-6 mb-8">
+<h3 class="font-headline-md text-primary mb-3">L'Esperienza</h3>
+<p class="text-on-surface-variant font-body-md leading-relaxed">
+Sviluppato in collaborazione con gli esperti di <strong class="text-text-primary">infoSOStenibile</strong> (giornale bergamasco dedicato all'ambiente e all'economia circolare) e del <strong class="text-text-primary">DESS BG</strong> (Distretto di Economia Sociale e Solidale della provincia di Bergamo), il progetto ha l'obiettivo di formare i ragazzi sui temi dello sviluppo sostenibile e della cittadinanza consapevole.
+</p>
+</div>
+<!-- Contenuti placeholder -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="glass-card rounded-2xl p-6">
+<h3 class="font-headline-md text-primary mb-3 flex items-center gap-2"><span class="material-symbols-outlined">description</span> Indagine Statistica</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Lavorando in un gruppo di 4 persone, abbiamo condotto un'indagine statistica somministrata agli studenti del Liceo "Edoardo Amaldi". Nello specifico, ci siamo occupati di analizzare e mettere in relazione la quantità di sport praticato dai giovani rispetto al tempo trascorso sui dispositivi elettronici.</p>
+</div>
+<div class="glass-card rounded-2xl p-6">
+<h3 class="font-headline-md text-primary mb-3 flex items-center gap-2"><span class="material-symbols-outlined">edit_document</span> Redazione dell'Articolo</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Dopo aver appreso la struttura editoriale di una pagina di giornale, abbiamo elaborato le infografiche e i grafici per visualizzare i dati raccolti. Ho curato personalmente la stesura del testo esplicativo e delle conclusioni dell'articolo, sintetizzando i comportamenti emersi e uniformando il lavoro del team prima della consegna.</p>
+</div>
+</div>
+</main>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 w-full z-50 bg-white/90 backdrop-blur-xl border-t border-black/10 flex justify-around items-center h-16 px-2">
+<a class="flex flex-col items-center justify-center text-on-surface-variant" href="index.html"><span class="material-symbols-outlined">dashboard</span><span class="text-[10px] uppercase">Home</span></a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant" href="presentazione.html"><span class="material-symbols-outlined">person</span><span class="text-[10px] uppercase">Chi sono</span></a>
+<a class="flex flex-col items-center justify-center text-primary font-bold" href="bergamo.html"><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">school</span><span class="text-[10px] uppercase">PCTO</span></a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant" href="sinergie.html"><span class="material-symbols-outlined">business_center</span><span class="text-[10px] uppercase">Azienda</span></a>
+</nav>
+</body>
+</html>

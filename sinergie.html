@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="it"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>PCTO · Sinergie e Servizi — Caiti Sofia</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">tailwind.config = {darkMode: "class", theme: {extend: {colors: {"tertiary-fixed": "#8af2ff", "secondary-fixed-dim": "#9333ea", "inverse-surface": "#1e293b", "on-error": "#690005", "primary-container": "#7e22ce", "on-secondary-container": "#c4abff", "on-tertiary-container": "#004349", "on-tertiary": "#00363b", "surface-container-lowest": "#ffffff", "inverse-on-surface": "#2c303b", "on-primary": "#ffffff", "secondary-container": "#571bc1", "on-tertiary-fixed-variant": "#004f56", "surface-dim": "#f1f5f9", background: "#f8fafc", "surface-tint": "#9333ea", "on-surface-variant": "#64748b", "on-primary-fixed": "#3b0764", "tertiary-container": "#00b8c7", "text-primary": "#0f172a", "surface-container-high": "#e2e8f0", outline: "#869397", "error-container": "#93000a", "on-tertiary-fixed": "#001f23", secondary: "#9333ea", "surface-container-low": "#f8fafc", "on-secondary-fixed": "#23005c", "on-error-container": "#ffdad6", error: "#ffb4ab", "on-background": "#1e293b", "inverse-primary": "#a855f7", primary: "#9333ea", "tertiary-fixed-dim": "#9333ea", "outline-variant": "#cbd5e1", surface: "#f8fafc", tertiary: "#9333ea", "on-secondary": "#3c0091", "surface-variant": "#e2e8f0", "on-primary-container": "#581c87", "surface-bright": "#e2e8f0", "primary-fixed": "#e9d5ff", "secondary-fixed": "#e9ddff", "surface-alt": "#f1f5f9", "text-muted": "#94A3B8", "primary-fixed-dim": "#9333ea", "surface-container": "#f1f5f9", "on-primary-fixed-variant": "#6b21a8", "surface-container-highest": "#cbd5e1", "on-secondary-fixed-variant": "#5516be", "on-surface": "#1e293b"}, borderRadius: {DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px"}, spacing: {gutter: "1.5rem", "container-max": "1200px", "margin-mobile": "1rem", "section-gap": "4rem"}, fontFamily: {"body-lg": ["Inter"], "code-sm": ["monospace"], "headline-lg": ["Inter"], "label-md": ["Inter"], "headline-lg-mobile": ["Inter"], "headline-xl": ["Inter"], "body-md": ["Inter"], "headline-md": ["Inter"], headline: ["Inter"], display: ["Inter"], body: ["Inter"], label: ["Inter"]}, fontSize: {"body-lg": ["18px", {lineHeight: "1.6", fontWeight: "400"}], "code-sm": ["14px", {lineHeight: "1.5", fontWeight: "400"}], "headline-lg": ["32px", {lineHeight: "1.2", fontWeight: "600"}], "label-md": ["14px", {lineHeight: "1.0", letterSpacing: "0.05em", fontWeight: "500"}], "headline-lg-mobile": ["24px", {lineHeight: "1.3", fontWeight: "600"}], "headline-xl": ["48px", {lineHeight: "1.2", letterSpacing: "-0.02em", fontWeight: "700"}], "body-md": ["16px", {lineHeight: "1.6", fontWeight: "400"}], "headline-md": ["20px", {lineHeight: "1.4", fontWeight: "600"}]}}}};</script>
+<style>
+    .glass-card {
+      background: rgba(255, 255, 255, 0.75);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(0, 0, 0, 0.1);
+    }
+    .glass-card:hover {
+      border-color: #9333ea;
+      box-shadow: 0 0 25px rgba(147, 51, 234, 0.1);
+    }
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+    h1.text-primary, h2.text-primary, h3.text-primary, h4.text-primary,
+    h2 .text-primary, h3 .text-primary, .text-primary.font-headline-xl,
+    .text-primary.font-headline-lg, .text-primary.font-headline-md {
+      text-shadow: 0 0 20px rgba(147, 51, 234, 0.55);
+    }
+    h1.text-secondary, h2.text-secondary, h3.text-secondary, h4.text-secondary,
+    h2 .text-secondary, h3 .text-secondary, .text-secondary.font-headline-xl,
+    .text-secondary.font-headline-lg, .text-secondary.font-headline-md {
+      text-shadow: 0 0 20px rgba(147, 51, 234, 0.55);
+    }
+    .image-placeholder {
+      background: linear-gradient(135deg, #1c1f2a 0%, #0f131d 100%);
+      position: relative;
+      overflow: hidden;
+    }
+    .image-placeholder::after {
+      content: 'IMAGE_PLACEHOLDER';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: rgba(147, 51, 234, 0.2);
+      font-weight: bold;
+      letter-spacing: 0.2em;
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface font-body-md min-h-screen pb-24 md:pb-0 pt-20">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-black/10 flex justify-between items-center px-gutter py-4">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" style="font-size: 24px;">terminal</span>
+<h1 class="font-headline-md text-headline-md font-bold text-text-primary">Caiti Sofia</h1>
+</div>
+<div class="flex items-center gap-3">
+<a href="index.html" class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-primary/10 border border-primary/20 text-primary font-label-md text-label-md hover:bg-primary/20 transition-all">
+<span class="material-symbols-outlined" style="font-size:18px;">arrow_back</span>
+Home
+</a>
+<div class="h-10 w-10 rounded-full bg-primary/10 border border-primary/20 flex items-center justify-center font-bold text-primary text-sm">SC</div>
+</div>
+</header>
+<main class="max-w-[1200px] mx-auto px-gutter py-8">
+<!-- Hero Section -->
+<section class="mb-12">
+<div class="flex flex-col gap-2 mb-8">
+<div class="flex items-center gap-2 text-primary">
+<span class="material-symbols-outlined">corporate_fare</span>
+<span class="font-label-md text-label-md tracking-widest uppercase">PCTO @ Sinergie e Servizi</span>
+</div>
+<h2 class="font-headline-xl text-headline-xl md:text-5xl text-text-primary">Medicina del Lavoro e Gestione Aziendale</h2>
+<div class="glass-card w-fit px-3 py-1 rounded-lg flex items-center gap-2 mt-2">
+<span class="material-symbols-outlined text-primary text-sm">calendar_today</span>
+<span class="text-xs">26/06/23 - 29/06/24</span>
+</div>
+</div>
+<!-- Main Large Image -->
+<div class="w-full aspect-[4/3] rounded-2xl overflow-hidden glass-card relative group">
+<img alt="Medicina del Lavoro — Sinergie e Servizi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="img/sinergie_medico.jpg"/>
+</div>
+<!-- Intro paragraph -->
+<h3 class="mt-8 mb-3 font-headline-md text-primary">Tutela della salute nei luoghi di lavoro e amministrazione aziendale</h3>
+<p class="text-on-surface-variant font-body-md leading-relaxed max-w-3xl">
+Il percorso ha offerto una panoramica completa sulla sicurezza sul lavoro e sulla medicina preventiva aziendale. Ho assistito il Medico Competente durante le visite periodiche di sorveglianza sanitaria dei dipendenti, imparando i protocolli di anamnesi clinica e i parametri fondamentali.
+</p>
+</section>
+<!-- Visual Bento Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Infrastructure Section -->
+<div class="space-y-4">
+<div class="aspect-[4/3] rounded-2xl overflow-hidden">
+<img alt="Strumenti diagnostici — spirometria ed ECG" class="w-full h-full object-cover" src="img/diagnostica.jpg"/>
+</div>
+<div class="px-2">
+<h3 class="font-headline-md text-primary mb-3 flex items-center gap-2">
+<span class="material-symbols-outlined">monitor_heart</span> Diagnostica e Procedure Cliniche
+</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Ho appreso le procedure di misurazione della pressione arteriosa e della saturazione, e assistito all'esecuzione di esami diagnostici chiave come spirometrie, audiometrie ed elettrocardiogrammi (ECG), comprendendo la corretta gestione e catalogazione delle provette per i prelievi ematici.</p>
+</div>
+</div>
+<!-- Support Section -->
+<div class="space-y-4">
+<div class="aspect-[4/3] rounded-2xl overflow-hidden">
+<img alt="Gestione amministrativa — documenti e organizzazione" class="w-full h-full object-cover" src="img/gestione.jpg"/>
+</div>
+<div class="px-2">
+<h3 class="font-headline-md text-primary mb-3 flex items-center gap-2">
+<span class="material-symbols-outlined">business_center</span> Gestione Amministrativa
+</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">All'attività clinica si è affiancata quella gestionale: ho curato la pianificazione dei promemoria aziendali, l'archiviazione delle Carte Qualifica Conducenti (CQC), l'elaborazione di fatture e l'utilizzo di funzionalità digitali avanzate (come la stampa unione). Ho infine partecipato a sopralluoghi ispettivi direttamente nei luoghi di lavoro insieme al medico e ai datori di lavoro.</p>
+</div>
+</div>
+</div>
+</main>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 w-full z-50 bg-white/90 backdrop-blur-xl border-t border-black/10 flex justify-around items-center h-16 px-2">
+<a class="flex flex-col items-center justify-center text-on-surface-variant" href="index.html">
+<span class="material-symbols-outlined">dashboard</span>
+<span class="text-[10px] uppercase">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant" href="index.html">
+<span class="material-symbols-outlined">folder_special</span>
+<span class="text-[10px] uppercase">Work</span>
+</a>
+<a class="flex flex-col items-center justify-center text-primary font-bold" href="index.html">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">school</span>
+<span class="text-[10px] uppercase">PCTO</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant" href="index.html">
+<span class="material-symbols-outlined">mail</span>
+<span class="text-[10px] uppercase">Mail</span>
+</a>
+</nav>
+</body></html>
