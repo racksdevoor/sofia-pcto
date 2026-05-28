@@ -42,8 +42,8 @@
     .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
 </style>
 </head>
-<body class="font-body-md text-on-surface selection:bg-primary/30">
-<!-- TopAppBar -->
+<body class="font-body-md text-on-surface selection:bg-primary/30 flex flex-col min-h-screen">
+
 <header class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-black/10 shadow-sm flex justify-between items-center px-gutter py-4">
 <div class="flex items-center gap-3">
 <span class="material-symbols-outlined text-primary text-[24px]">school</span>
@@ -53,8 +53,8 @@
 <div class="h-8 w-8 rounded-full bg-primary/10 border border-primary/20 flex items-center justify-center font-bold text-primary text-xs" title="Sofia Caiti">SC</div>
 </div>
 </header>
-<main class="pt-32 pb-24 px-gutter max-w-container-max mx-auto min-h-screen">
-<!-- Hero Section -->
+
+<main class="pt-32 pb-24 px-gutter max-w-container-max mx-auto flex-grow w-full">
 <section class="mb-16">
 <h2 class="font-headline-xl text-headline-xl text-text-primary mb-4 lg:w-2/3">
     Formazione <span class="text-primary neon-glow-cyan">Scuola Lavoro</span>
@@ -63,11 +63,10 @@
     Un archivio digitale dedicato alla formazione PCTO e ai progetti tecnici sviluppati durante l'ultimo triennio al Liceo Edoardo Amaldi.
 </p>
 </section>
-<!-- Bento Grid Navigation -->
-<div class="list-item grid-cols-1 md:grid-cols-6 lg:grid-cols-12 gap-6">
-<!-- 1. Presentazione Personale (Large) -->
+
+<div class="grid grid-cols-1 md:grid-cols-6 lg:grid-cols-12 gap-6">
 <a class="md:col-span-6 lg:col-span-8 group glass-card rounded-xl p-8 flex flex-col" href="presentazione.html">
-<div class="flex justify-between items-start">
+<div class="flex justify-between items-start mb-6">
 <div class="p-3 rounded-lg bg-primary/10 text-primary"><span class="material-symbols-outlined text-3xl">person</span></div>
 <span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary transition-colors">north_east</span>
 </div>
@@ -76,9 +75,7 @@
 <p class="font-body-md text-body-md text-on-surface-variant">Profilo biografico, attitudini personali e obiettivi professionali futuri.</p>
 </div>
 </a>
-<!-- 2+3. BergamoScienza + Sinergie stacked vertically -->
-<div class="md:col-span-6 lg:col-span-4 flex flex-col">
-<!-- 2. PCTO: BergamoScienza -->
+<div class="md:col-span-6 lg:col-span-4 flex flex-col gap-6">
 <a class="group glass-card rounded-xl p-8 flex flex-col justify-between flex-1 min-h-[148px]" href="bergamo.html">
 <div class="flex justify-end items-start">
 <span class="material-symbols-outlined text-on-surface-variant group-hover:text-secondary transition-colors">north_east</span>
@@ -88,7 +85,6 @@
 <p class="font-body-md text-body-md text-on-surface-variant">Divulgazione scientifica e gestione laboratori.</p>
 </div>
 </a>
-<!-- 3. PCTO: Sinergie e Servizi -->
 <a class="group glass-card rounded-xl p-8 flex flex-col justify-between flex-1 min-h-[148px]" href="sinergie.html">
 <div class="flex justify-end items-start">
 <span class="material-symbols-outlined text-on-surface-variant group-hover:text-tertiary transition-colors">north_east</span>
@@ -99,7 +95,6 @@
 </div>
 </a>
 </div>
-<!-- 4. PCTO: Project Work (Wide) -->
 <a class="md:col-span-6 lg:col-span-4 group glass-card rounded-xl p-8 flex flex-col justify-between min-h-[148px]" href="project-work.html">
 <div class="flex justify-end items-start">
 <span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary transition-colors">north_east</span>
@@ -109,7 +104,6 @@
 <p class="font-body-md text-body-md text-on-surface-variant">Sviluppo software e documentazione tecnica di progetto.</p>
 </div>
 </a>
-<!-- 5. PCTO: Università di Brescia (Medium) -->
 <a class="md:col-span-6 lg:col-span-4 group glass-card rounded-xl p-8 flex flex-col justify-between min-h-[148px]" href="universita.html">
 <div class="flex justify-end items-start">
 <span class="material-symbols-outlined text-on-surface-variant group-hover:text-secondary transition-colors">north_east</span>
@@ -119,7 +113,6 @@
 <p class="font-body-md text-body-md text-on-surface-variant">Seminari accademici e orientamento universitario STEM.</p>
 </div>
 </a>
-<!-- 6. Competenze e Crescita Personale -->
 <a class="md:col-span-6 lg:col-span-4 group glass-card rounded-xl p-8 flex flex-col justify-between min-h-[148px]" href="competenze.html">
 <div class="flex justify-end items-start">
 <span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary transition-colors">north_east</span>
@@ -130,7 +123,7 @@
 </div>
 </a>
 </div>
-<!-- Quick Stats -->
+
 <section class="mt-section-gap grid grid-cols-2 gap-8 py-12 border-t border-black/10">
 <div>
 <p class="text-on-surface-variant font-label-md text-label-md uppercase tracking-widest mb-2">Anno Scolastico</p>
@@ -142,6 +135,42 @@
 </div>
 </section>
 </main>
+
+<footer class="w-full bg-white/80 backdrop-blur-md border-t border-black/10 py-12 px-gutter mt-auto">
+<div class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+    <div class="space-y-3">
+        <div class="flex items-center gap-2 text-primary font-bold">
+            <span class="material-symbols-outlined">workspace_premium</span>
+            <span class="font-headline-md">Portfolio PCTO</span>
+        </div>
+        <p class="text-on-surface-variant text-body-md max-w-md">
+            Piattaforma dedicata alla formazione scuola-lavoro e ai percorsi PCTO.
+        </p>
+        <p class="text-xs text-text-muted">
+            Realizzato per il progetto di formazione scuola-lavoro (PCTO)
+        </p>
+    </div>
+
+    <div class="flex flex-col space-y-3 md:items-end md:text-right">
+        <p class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider mb-1">Contatti & Link</p>
+        
+        <a href="mailto:caiti.sofia@liceoamaldi.edu.it" class="flex items-center gap-2 text-text-primary hover:text-primary transition-colors text-body-md md:justify-end">
+            <span class="material-symbols-outlined text-[18px]">mail</span>
+            caiti.sofia@liceoamaldi.edu.it
+        </a>
+
+        <a href="tel:+393518678790" class="flex items-center gap-2 text-text-primary hover:text-primary transition-colors text-body-md md:justify-end">
+            <span class="material-symbols-outlined text-[18px]">call</span>
+            351 867 87 90
+        </a>
+
+        <a href="https://github.com/MaturitaSC-Amaldi" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 text-text-primary hover:text-primary transition-colors text-body-md md:justify-end font-code-sm">
+            <span class="material-symbols-outlined text-[18px]">code</span>
+            GitHub: @MaturitaSC-Amaldi
+        </a>
+    </div>
+</div>
+</footer>
 
 </body>
 </html>
